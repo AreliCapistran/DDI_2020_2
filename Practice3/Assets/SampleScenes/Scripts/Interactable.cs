@@ -13,15 +13,10 @@ public class Interactable : MonoBehaviour
     public virtual void Interact()
     {
         Instantiate(MagicSleeping);
-        //Debug.Log("Pozo: Haz venido a verme... ");
+       // Debug.Log("Pozo: Haz venido a verme... ");
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if(isInsideZone)
@@ -36,7 +31,6 @@ public class Interactable : MonoBehaviour
         {
             return;
         }
-        //Debug.Log("Traspaso el lago: " + other.gameObject.name);
         isInsideZone = true;
     }
 
