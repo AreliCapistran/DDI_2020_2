@@ -6,20 +6,20 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     bool isInsideZone = false;
-    public AudioSource Magic;
-    public GameObject MagicSleeping;
+    //public AudioSource Magic;
+    //public GameObject MagicSleeping;
 
 
     public virtual void Interact()
     {
-        Instantiate(MagicSleeping);
+        //Instantiate(MagicSleeping);
        // Debug.Log("Pozo: Haz venido a verme... ");
     }
 
     
     void Update()
     {
-        if(isInsideZone)
+        if(isInsideZone && Input.GetKeyDown(KeyCode.I))
         {
             Interact();
         }
