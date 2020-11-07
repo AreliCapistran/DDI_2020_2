@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+
+    /*static protected Inventory s_InventoryInstance;
+    static public Inventory InventoryInstance { get { return s_InventoryInstance; } }  */  
+    
     public delegate void OnChange();
     public OnChange onChange;
 
@@ -12,6 +16,12 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
+    
+    /*public Awake()
+    {
+        s_InventoryInstance = this;
+    }*/
+    
     public void Add(Item item)
     {
         if (items.Count < space)
@@ -44,5 +54,4 @@ public class Inventory : MonoBehaviour
             //Debug.LogWarning("Item no está en el inventario");
         }
     }
-
 }

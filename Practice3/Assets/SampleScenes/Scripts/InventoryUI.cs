@@ -17,6 +17,7 @@ public class InventoryUI : MonoBehaviour
         }
         inventoryUIPanel.SetActive(false);
         inventory.onChange += UpdateUI;
+        inventory.onChange -= UpdateUI;
     }
 
     void Update()
