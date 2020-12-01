@@ -8,4 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Practica4.unity
     guid: e138a47c254aefa48b5f415f8dfe8691
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f6bbb233a6f6cdc40be0aac7fcd5f353,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 2382a189303ee174ba54c71ea127b179,
+      type: 2}
