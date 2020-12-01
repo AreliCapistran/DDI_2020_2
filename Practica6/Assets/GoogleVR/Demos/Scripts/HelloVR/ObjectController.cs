@@ -46,6 +46,11 @@ namespace GoogleVR.HelloVR
         public float interactionTimer = 0f;
         private bool timerRunning = false;
 
+        public AudioSource Magic;
+        public GameObject MagicSleeping;
+
+        public GameObject gameObjectToDeactivate;
+
         void Update()
         {
             if (timerRunning)
@@ -172,5 +177,17 @@ namespace GoogleVR.HelloVR
                 locomotion.TeleportPlayer(transform.position);
             }
         }
+
+        public void sonido()
+        {
+            Instantiate(MagicSleeping);
+            Debug.Log("Abreme... ");
+        }
+
+        public void activacion()
+        {
+            gameObjectToDeactivate.SetActive(true);
+        }
+       
     }
 }
